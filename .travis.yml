@@ -11,12 +11,12 @@ php:
 before_script:
     - composer self-update
     - composer install
-    - composer require satooshi/php-coveralls
+    - wget https://github.com/satooshi/php-coveralls/releases/download/v1.0.0/coveralls.phar
     - app/console c:c -e test
     - app/console propel:database:create -e test
 
 script:
-    - phpunit -c app 
+    - phpunit --coverage-clover build/logs/clover.xml -c app
 
 after_script:
-    - travis_retry php vendor/bin/coveralls -v
+    - travis_retry php coveralls.phar -v
