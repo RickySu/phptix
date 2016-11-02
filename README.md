@@ -1,4 +1,5 @@
-phptix
-======
+Symfony Framework PHPTix 售票系統
+=================================
 
-A Symfony project created on November 2, 2016, 11:05 am.
+[![Build Status](https://travis-ci.org/RickySu/phptix.svg?branch=master)](https://travis-ci.org/RickySu/phptix)
+[![Coverage Status](https://coveralls.io/repos/github/RickySu/phptix/badge.svg?branch=master)](https://coveralls.io/github/RickySu/phptix?branch=master)
