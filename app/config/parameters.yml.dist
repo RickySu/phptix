@@ -28,3 +28,7 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    allow_origin:
+        -              'localhost:8080'
+        -              '127.0.0.1:8080'
