@@ -14,3 +14,12 @@ web_profiler:
 
 swiftmailer:
     disable_delivery: true
+
+propel:
+    dbal:
+        driver:               %test_database_driver%
+        user:                 %test_database_user%
+        password:             %test_database_password%
+        dsn:                  %test_database_driver%:host=%test_database_host%;dbname=%test_database_name%;charset=UTF8
+        options:              {}
+        attributes:           {}

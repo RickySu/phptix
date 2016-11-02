@@ -2,19 +2,19 @@
 # Set parameters here that may be different on each deployment target of the app, e.g. development, staging, production.
 # http://symfony.com/doc/current/best_practices/configuration.html#infrastructure-related-configuration
 parameters:
-    database_driver:      pdo_mysql
-    database_host:        127.0.0.1
-    database_port:        ~
-    database_name:        phptix
-    database_user:        test
-    database_password:    12345
+    database_driver:        pdo_mysql
+    database_host:          127.0.0.1
+    database_port:          ~
+    database_name:          phptix
+    database_user:          test
+    database_password:      12345
 
-    test_database_driver: pdo_mysql
-    test_database_host:   127.0.0.1
-    test_database_port:   ~
-    test_database_name:   phptix_test
-    test_database_user:   test
-    test_database_password: 12345
+    test_database_driver:   pdo_mysql
+    test_database_host:     127.0.0.1
+    test_database_port:     ~
+    test_database_name:     phptix_test
+    test_database_user:     travis
+    test_database_password: ~
 
     # You should uncomment this if you want use pdo_sqlite
     # database_path: "%kernel.root_dir%/data.db3"

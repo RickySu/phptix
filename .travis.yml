@@ -1,5 +1,8 @@
 language: php
 
+services:
+    - mysql
+
 php:
     - 5.6
     - 7
@@ -10,6 +13,7 @@ before_script:
     - composer install
     - composer require satooshi/php-coveralls
     - app/console c:c -e test
+    - app/console propel:database:create -e test
 
 script:
     - phpunit -c app 
