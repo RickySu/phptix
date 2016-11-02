@@ -12,7 +12,7 @@ before_script:
     - app/console c:c -e test
 
 script:
-    - phpunit
+    - phpunit -c app 
 
 after_script:
     - php vendor/bin/coveralls -v
